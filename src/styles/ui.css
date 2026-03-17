@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap');
+
+:root {
+  --panel-bg: rgba(10, 10, 30, 0.75);
+  --panel-border: rgba(150, 120, 220, 0.25);
+  --text-primary: #e8e0ff;
+  --text-muted: rgba(180, 160, 220, 0.7);
+  --accent: #aa77ff;
+}
+
+.ui-panel {
+  position: fixed;
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  padding: 14px 18px;
+  backdrop-filter: blur(12px);
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Title */
+.title-panel {
+  top: 22px;
+  left: 22px;
+}
+
+.palace-title {
+  font-family: 'Cinzel', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: 0.08em;
+  text-shadow: 0 0 20px rgba(170, 119, 255, 0.5);
+}
+
+.palace-subtitle {
+  font-family: 'Cinzel', serif;
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 3px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+/* Stats */
+.stats-panel {
+  top: 22px;
+  right: 22px;
+  text-align: right;
+  min-width: 150px;
+}
+
+.stat-line {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  gap: 6px;
+  line-height: 1.7;
+}
+
+.stat-num {
+  font-family: 'Cinzel', serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--accent);
+  text-shadow: 0 0 12px rgba(170, 119, 255, 0.6);
+}
+
+.stat-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.stat-divider {
+  height: 1px;
+  background: var(--panel-border);
+  margin: 8px 0;
+}
+
+.stat-date {
+  font-size: 10px;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+/* Compass */
+.compass-panel {
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  padding: 10px 24px;
+}
+
+.compass-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.compass-dir {
+  font-family: 'Cinzel', serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-shadow: 0 0 8px currentColor;
+}
+
+.compass-name {
+  font-size: 9px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+/* Hover label */
+.hover-label {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -130px);
+  pointer-events: none;
+  z-index: 100;
+  animation: fadeInUp 0.2s ease;
+}
+
+.hover-label-inner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(20, 15, 40, 0.9);
+  border: 1px solid rgba(170, 119, 255, 0.4);
+  border-radius: 20px;
+  padding: 8px 16px;
+  color: var(--text-primary);
+  font-size: 13px;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 24px rgba(170, 119, 255, 0.3);
+}
+
+.hover-orb {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 8px var(--accent);
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Intro overlay */
+.intro-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(8, 6, 22, 0.65);
+  z-index: 200;
+  cursor: pointer;
+  transition: opacity 0.8s ease;
+}
+
+.intro-overlay.fade-out-slow {
+  opacity: 0.3;
+}
+
+.intro-text {
+  text-align: center;
+}
+
+.intro-headline {
+  font-family: 'Cinzel', serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: 0.06em;
+  text-shadow: 0 0 40px rgba(170, 119, 255, 0.8), 0 2px 4px rgba(0,0,0,0.5);
+  margin-bottom: 16px;
+}
+
+.intro-sub {
+  font-family: 'Cinzel', serif;
+  font-size: 14px;
+  color: var(--accent);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+.skip-hint {
+  position: fixed;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 11px;
+  color: var(--text-muted);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  animation: fadePulse 2s ease-in-out infinite;
+}
+
+/* Wing labels */
+.wing-labels {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+
+.wing-label {
+  position: absolute;
+  font-size: 11px;
+  color: rgba(200, 180, 240, 0.5);
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.1em;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-transform: uppercase;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translate(-50%, -120px); }
+  to { opacity: 1; transform: translate(-50%, -130px); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 8px var(--accent); }
+  50% { opacity: 0.5; box-shadow: 0 0 16px var(--accent); }
+}
+
+@keyframes fadePulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.9; }
+}
+
+.fade-in-up {
+  animation: introFadeInUp 0.6s ease forwards;
+}
+
+@keyframes introFadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

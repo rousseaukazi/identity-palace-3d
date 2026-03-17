@@ -1,0 +1,178 @@
+{
+  "lastUpdated": "2026-03-17",
+  "newWindowHours": 72,
+  "totalMemories": 344,
+  "wings": {
+    "people": {
+      "rooms": 4,
+      "floors": 1,
+      "entries": [
+        {
+          "id": "connection",
+          "label": "Connections",
+          "size": 12.0,
+          "rawCount": 115,
+          "addedAt": "2026-03-17"
+        },
+        {
+          "id": "family-relationship",
+          "label": "Family",
+          "size": 4.16,
+          "rawCount": 14,
+          "addedAt": "2026-03-17"
+        },
+        {
+          "id": "romantic-relationship",
+          "label": "Romantic",
+          "size": 2.9,
+          "rawCount": 10,
+          "addedAt": "2026-03-17"
+        },
+        {
+          "id": "friend-detail",
+          "label": "Friends",
+          "size": 2.51,
+          "rawCount": 9,
+          "addedAt": "2026-03-17"
+        }
+      ]
+    },
+    "projects": {
+      "rooms": 6,
+      "floors": 2,
+      "entries": [
+        {
+          "id": "career-arc",
+          "label": "Career Arc",
+          "size": 4.65,
+          "rawCount": 16,
+          "addedAt": "2026-03-17"
+        },
+        {
+          "id": "life-event",
+          "label": "Life Events",
+          "size": 3.58,
+          "rawCount": 12,
+          "addedAt": "2026-03-17"
+        },
+        {
+          "id": "decision-framework",
+          "label": "Decisions",
+          "size": 3.26,
+          "rawCount": 11,
+          "addedAt": "2026-03-17"
+        },
+        {
+          "id": "skill",
+          "label": "Skills",
+          "size": 3.26,
+          "rawCount": 11,
+          "addedAt": "2026-03-17"
+        },
+        {
+          "id": "pride-achievement",
+          "label": "Achievements",
+          "size": 3.26,
+          "rawCount": 11,
+          "addedAt": "2026-03-17"
+        },
+        {
+          "id": "origin-story",
+          "label": "Origin",
+          "size": 1.0,
+          "rawCount": 6,
+          "addedAt": "2026-03-17"
+        }
+      ]
+    },
+    "stories": {
+      "rooms": 6,
+      "floors": 2,
+      "entries": [
+        {
+          "id": "philosophy",
+          "label": "Philosophy",
+          "size": 5.48,
+          "rawCount": 20,
+          "addedAt": "2026-03-17"
+        },
+        {
+          "id": "self-concept",
+          "label": "Self",
+          "size": 5.29,
+          "rawCount": 19,
+          "addedAt": "2026-03-17"
+        },
+        {
+          "id": "core-belief",
+          "label": "Core Beliefs",
+          "size": 5.09,
+          "rawCount": 18,
+          "addedAt": "2026-03-17"
+        },
+        {
+          "id": "aspiration",
+          "label": "Aspirations",
+          "size": 4.16,
+          "rawCount": 14,
+          "addedAt": "2026-03-17"
+        },
+        {
+          "id": "fear-vulnerability",
+          "label": "Fears",
+          "size": 2.9,
+          "rawCount": 10,
+          "addedAt": "2026-03-17"
+        },
+        {
+          "id": "conflict-pattern",
+          "label": "Conflicts",
+          "size": 1.0,
+          "rawCount": 6,
+          "addedAt": "2026-03-17"
+        }
+      ]
+    },
+    "preferences": {
+      "rooms": 5,
+      "floors": 1,
+      "entries": [
+        {
+          "id": "preference",
+          "label": "Preferences",
+          "size": 3.26,
+          "rawCount": 11,
+          "addedAt": "2026-03-17"
+        },
+        {
+          "id": "communication-style",
+          "label": "Communication",
+          "size": 2.51,
+          "rawCount": 9,
+          "addedAt": "2026-03-17"
+        },
+        {
+          "id": "habit-pattern",
+          "label": "Habits",
+          "size": 2.07,
+          "rawCount": 8,
+          "addedAt": "2026-03-17"
+        },
+        {
+          "id": "humor-style",
+          "label": "Humor",
+          "size": 1.57,
+          "rawCount": 7,
+          "addedAt": "2026-03-17"
+        },
+        {
+          "id": "love-language",
+          "label": "Love Language",
+          "size": 1.57,
+          "rawCount": 7,
+          "addedAt": "2026-03-17"
+        }
+      ]
+    }
+  }
+}
